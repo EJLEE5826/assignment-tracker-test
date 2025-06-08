@@ -13,7 +13,7 @@ app = FastAPI(title="Assignment Tracker API", version="1.0.0")
 if os.getenv("ENVIRONMENT") == "production":
     origins = [
         "https://*.vercel.app",
-        os.getenv("FRONTEND_URL", "https://assignment-tracker-test.vercel.app")
+        os.getenv("FRONTEND_URL", "https://assignment-tracker-test.vercel.app") # Change to your production frontend URL
     ]
 else:
     origins = [

@@ -23,8 +23,8 @@ const getApiUrl = (): string => {
     }
   }
   
-  // Default to production API for Vercel deployment
-  return 'https://assignment-tracker-fastapi.onrender.com';
+  // Default to production API for FastAPI
+  return 'https://assignment-tracker-fastapi.onrender.com';   // Change this to your production API URL
 };
 
 export const config: Config = {
